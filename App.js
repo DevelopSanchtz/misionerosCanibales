@@ -107,10 +107,10 @@ import { Picker } from '@react-native-picker/picker'
         // PASAR 1 CANIBAL
         case "1":
           console.log("SI ENTRE MIRAME SOY EL NÚMERO #1 PERRILLO")
-          if(bote) { // BOTE EN EL LADO DERECHO
-            if((cantidadDerecha.misioneros >= cantidadDerecha.canibales - 1 || cantidadDerecha.misioneros === 0) // LADO DERECHO EQUILIBRIO
-              && (cantidadDerecha.canibales - 1 >= 0) // COMPROBAR QUE EXISTE LA CANTIDAD SOLICITADA
-              && (cantidadIzquierda.misioneros >= cantidadIzquierda.canibales + 1 || cantidadIzquierda.misioneros === 0)){ // LADO IZQUIERDO EQUILIBRIO
+          if(bote) { 
+            if((cantidadDerecha.misioneros >= cantidadDerecha.canibales - 1 || cantidadDerecha.misioneros === 0) 
+              && (cantidadDerecha.canibales - 1 >= 0) 
+              && (cantidadIzquierda.misioneros >= cantidadIzquierda.canibales + 1 || cantidadIzquierda.misioneros === 0)){ 
                 return true;
               }
               else {
@@ -121,9 +121,9 @@ import { Picker } from '@react-native-picker/picker'
               } 
           }
           else { // BOTE EN EL LADO IZQUIERDO
-            if((cantidadIzquierda.misioneros >= cantidadIzquierda.canibales - 1 || cantidadIzquierda.misioneros === 0) // LADO IZQUIERDO EQUILIBRIO
-              && (cantidadIzquierda.canibales -1 >= 0) // COMPROBAR QUE EXISTE LA CANTIDAD SOLICITADA
-              && (cantidadDerecha.misioneros >= cantidadDerecha.canibales + 1 || cantidadDerecha.misioneros === 0) // LADO DERECHO EQUILIBRIO
+            if((cantidadIzquierda.misioneros >= cantidadIzquierda.canibales - 1 || cantidadIzquierda.misioneros === 0) 
+              && (cantidadIzquierda.canibales -1 >= 0) 
+              && (cantidadDerecha.misioneros >= cantidadDerecha.canibales + 1 || cantidadDerecha.misioneros === 0) 
             ){
                 return true;
               }
@@ -136,10 +136,10 @@ import { Picker } from '@react-native-picker/picker'
           }
         // PASAR 1 MISIONERO
         case "2":
-          if(bote) { // BOTE EN EL LADO DERECHO
-            if((cantidadDerecha.misioneros - 1 >= cantidadDerecha.canibales || cantidadDerecha.misioneros - 1 === 0) // LADO DERECHO EQUILIBRIO
-              && (cantidadDerecha.misioneros - 1 >= 0) // COMPROBAR QUE EXISTE LA CANTIDAD SOLICITADA
-              && (cantidadIzquierda.misioneros + 1 >= cantidadIzquierda.canibales)){ // LADO IZQUIERDO EQUILIBRIO
+          if(bote) { 
+            if((cantidadDerecha.misioneros - 1 >= cantidadDerecha.canibales || cantidadDerecha.misioneros - 1 === 0) 
+              && (cantidadDerecha.misioneros - 1 >= 0) 
+              && (cantidadIzquierda.misioneros + 1 >= cantidadIzquierda.canibales)){ 
                 return true;
               }
               else {
@@ -150,9 +150,9 @@ import { Picker } from '@react-native-picker/picker'
               } 
           }
           else { // BOTE EN EL LADO IZQUIERDO
-            if((cantidadIzquierda.misioneros - 1 >= cantidadIzquierda.canibales || cantidadIzquierda.misioneros - 1 === 0) // LADO IZQUIERDO EQUILIBRIO
-              && (cantidadIzquierda.misioneros - 1 >= 0) // COMPROBAR QUE EXISTE LA CANTIDAD SOLICITADA
-              && (cantidadDerecha.misioneros + 1 >= cantidadDerecha.canibales)){ // LADO DERECHO EQUILIBRIO
+            if((cantidadIzquierda.misioneros - 1 >= cantidadIzquierda.canibales || cantidadIzquierda.misioneros - 1 === 0) 
+              && (cantidadIzquierda.misioneros - 1 >= 0) 
+              && (cantidadDerecha.misioneros + 1 >= cantidadDerecha.canibales)){ 
                 return true;
               
             }
@@ -165,10 +165,10 @@ import { Picker } from '@react-native-picker/picker'
           }
         // PASAR 2 CANIBALES
         case "3":
-          if(bote) { // BOTE EN EL LADO DERECHO
-            if((cantidadDerecha.misioneros >= cantidadDerecha.canibales - 2 || cantidadDerecha.misioneros === 0) // LADO DERECHO EQUILIBRIO
-              && (cantidadDerecha.canibales - 2 >= 0) // COMPROBAR QUE EXISTE LA CANTIDAD SOLICITADA
-              && (cantidadIzquierda.misioneros >= cantidadIzquierda.canibales + 2 || cantidadIzquierda.misioneros === 0)){ // LADO IZQUIERDO EQUILIBRIO
+          if(bote) { 
+            if((cantidadDerecha.misioneros >= cantidadDerecha.canibales - 2 || cantidadDerecha.misioneros === 0) 
+              && (cantidadDerecha.canibales - 2 >= 0) 
+              && (cantidadIzquierda.misioneros >= cantidadIzquierda.canibales + 2 || cantidadIzquierda.misioneros === 0)){ 
                 return true;
               }
               else {
@@ -179,9 +179,9 @@ import { Picker } from '@react-native-picker/picker'
               } 
           }
           else { // BOTE EN EL LADO IZQUIERDO
-            if((cantidadIzquierda.misioneros >= cantidadIzquierda.canibales - 2 || cantidadIzquierda.misioneros === 0) // LADO IZQUIERDO EQUILIBRIO
-              && (cantidadIzquierda.canibales - 2 >= 0) // COMPROBAR QUE EXISTE LA CANTIDAD SOLICITADA
-              && (cantidadDerecha.misioneros >= cantidadDerecha.canibales + 2 || cantidadDerecha.misioneros === 0)){ // LADO DERECHO EQUILIBRIO
+            if((cantidadIzquierda.misioneros >= cantidadIzquierda.canibales - 2 || cantidadIzquierda.misioneros === 0) 
+              && (cantidadIzquierda.canibales - 2 >= 0) 
+              && (cantidadDerecha.misioneros >= cantidadDerecha.canibales + 2 || cantidadDerecha.misioneros === 0)){ 
                 return true;
               }
               else {
@@ -193,10 +193,10 @@ import { Picker } from '@react-native-picker/picker'
           }
         // PASAR 2 MISIONEROS
         case "4":
-          if(bote) { // BOTE EN EL LADO DERECHO
-            if((cantidadDerecha.misioneros - 2 >= cantidadDerecha.canibales || cantidadDerecha.misioneros - 2 === 0) // LADO DERECHO EQUILIBRIO
-              && (cantidadDerecha.misioneros - 2 >= 0) // COMPROBAR QUE EXISTE LA CANTIDAD SOLICITADA
-              && (cantidadIzquierda.misioneros + 2 >= cantidadDerecha.canibales)){ // LADO IZQUIERDO EQUILIBRIO
+          if(bote) { 
+            if((cantidadDerecha.misioneros - 2 >= cantidadDerecha.canibales || cantidadDerecha.misioneros - 2 === 0) 
+              && (cantidadDerecha.misioneros - 2 >= 0) 
+              && (cantidadIzquierda.misioneros + 2 >= cantidadDerecha.canibales)){ 
                 return true;
               }
               else {
@@ -206,10 +206,10 @@ import { Picker } from '@react-native-picker/picker'
                 return false;
               } 
           }
-          else { // BOTE EN EL LADO IZQUIERDO
-            if((cantidadIzquierda.misioneros - 2 >= cantidadIzquierda.canibales || cantidadIzquierda.misioneros - 2 === 0) // LADO IZQUIERDO EQUILIBRIO
-              && (cantidadIzquierda.misioneros - 2 >= 0) // COMPROBAR QUE EXISTE LA CANTIDAD SOLICITADA
-              && (cantidadDerecha.misioneros + 2 >= cantidadDerecha.canibales)){ // LADO DERECHO EQUILIBRIO
+          else { 
+            if((cantidadIzquierda.misioneros - 2 >= cantidadIzquierda.canibales || cantidadIzquierda.misioneros - 2 === 0)
+              && (cantidadIzquierda.misioneros - 2 >= 0) 
+              && (cantidadDerecha.misioneros + 2 >= cantidadDerecha.canibales)){
                 return true;
               }
               else {
@@ -221,10 +221,10 @@ import { Picker } from '@react-native-picker/picker'
           }
         // PASAR 1 MISIONERO Y 1 CANIBAL
         case "5":
-          if(bote) { // BOTE EN EL LADO DERECHO
-            if((cantidadDerecha.misioneros - 1 >= cantidadDerecha.canibales - 1) // LADO DERECHO EQUILIBRIO
-              && (cantidadDerecha.misioneros - 1 >= 0 && cantidadDerecha.canibales - 1 >= 0) // COMPROBAR QUE EXISTE LA CANTIDAD SOLICITADA
-              && (cantidadIzquierda.misioneros + 1 >= cantidadIzquierda.canibales + 1)){ // LADO IZQUIERDO EQUILIBRIO
+          if(bote) { 
+            if((cantidadDerecha.misioneros - 1 >= cantidadDerecha.canibales - 1) 
+              && (cantidadDerecha.misioneros - 1 >= 0 && cantidadDerecha.canibales - 1 >= 0) 
+              && (cantidadIzquierda.misioneros + 1 >= cantidadIzquierda.canibales + 1)){ 
               return true;
             }
             else {
@@ -235,9 +235,9 @@ import { Picker } from '@react-native-picker/picker'
             } 
           }
           else { // BOTE EN EL LADO IZQUIERDO
-            if((cantidadIzquierda.misioneros - 1 >= cantidadIzquierda.canibales - 1) // LADO IZQUIERDO EQUILIBRIO
-              && (cantidadIzquierda.misioneros - 1 >= 0 && cantidadIzquierda.canibales - 1 >= 0) // COMPROBAR QUE EXISTE LA CANTIDAD SOLICITADA
-              && (cantidadDerecha.misioneros + 1 >= cantidadDerecha.canibales + 1)){ // LADO DERECHO EQUILIBRIO
+            if((cantidadIzquierda.misioneros - 1 >= cantidadIzquierda.canibales - 1) 
+              && (cantidadIzquierda.misioneros - 1 >= 0 && cantidadIzquierda.canibales - 1 >= 0) 
+              && (cantidadDerecha.misioneros + 1 >= cantidadDerecha.canibales + 1)){ 
               return true;
             }
             else {
@@ -310,26 +310,26 @@ const App = () => {
       <Text style = { styles.opciones }>5.- Pasar 1 CANIBAL y 1 MISIONERO</Text>
       
 
-      <Picker style = {{marginTop: 70, color: "#FFF"}} 
+      <Picker style = {{marginTop: 70, color: "#FFF", fontSize: 18}}
               selectedValue = {estado} 
               onValueChange = { respuesta => setEstado( respuesta ) }>
 
-          <Picker.Item label = "- SELECCIONE LA ACCIÓN -" value = "" />
-          <Picker.Item label = "1" value = "1" />
-          <Picker.Item label = "2" value = "2" />
-          <Picker.Item label = "3" value = "3" />
-          <Picker.Item label = "4" value = "4" />
-          <Picker.Item label = "5" value = "5" />
+          <Picker.Item color = "red" label = "- SELECCIONE LA ACCIÓN -" value = "" />
+          <Picker.Item label = "Opción 1" value = "1" />
+          <Picker.Item label = "Opción 2" value = "2" />
+          <Picker.Item label = "Opción 3" value = "3" />
+          <Picker.Item label = "Opción 4" value = "4" />
+          <Picker.Item label = "Opción 5" value = "5" />
 
 
       </Picker>
     
     <View style = {{alignItems: "center", marginTop: 60}}>
 
-      <TouchableOpacity style = {{height: 50, width: 130, backgroundColor: "#FFF", justifyContent: "center", alignItems: "center", }}
+      <TouchableOpacity style = {{height: 50, width: 180, backgroundColor: "#FFF", justifyContent: "center", alignItems: "center", borderRadius: 10, elevation: 2}}
           onPress = {() => {analizarMetodo(estado)}}
       >
-            <Text style = {{ color: "#000"}}>ANALIZAR</Text>
+            <Text style = {{ color: "#0D3D6B", fontWeight: "bold", fontSize: 16}}>MOVER LA BARCA</Text>
       </TouchableOpacity>
     </View>
       
@@ -340,7 +340,7 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
       flex: 1,
-      backgroundColor: "#2D3C52"
+      backgroundColor: "#0D3D6B"
   },
   texto: {
       color: "#FFF",
